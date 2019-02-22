@@ -6,4 +6,4 @@ RUN dotnet restore
 COPY TestApp/ .
 RUN dotnet publish -c Release -o out
 EXPOSE 8080
-CMD ["dotnet", "/app/bin/Release/netcoreapp2.1/TestApp.dll"]
+CMD ["dotnet", "/app/bin/Release/netcoreapp1.1/TestApp.dll"]
