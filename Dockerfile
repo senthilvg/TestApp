@@ -5,5 +5,5 @@ COPY TestApp/*.csproj .
 RUN dotnet restore
 COPY TestApp/ .
 RUN dotnet publish -c Release -o out
-EXPOSE 8080
 CMD ["dotnet", "/app/bin/Release/netcoreapp1.1/TestApp.dll"]
+EXPOSE 8080
