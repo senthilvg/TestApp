@@ -20,6 +20,7 @@ namespace TestApp
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+            //Test
         }
 
         public IConfigurationRoot Configuration { get; }
